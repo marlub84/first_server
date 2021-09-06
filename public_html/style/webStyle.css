@@ -1,0 +1,80 @@
+/*Styl rozloženi starnky na header, menubar a body*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+.header {
+	background-color: #f1f1f1;
+	padding: 20px;
+	text-align: center;
+}
+
+/* menubar navigační lišty*/
+.topnav {
+	overflow: hidden;
+	background-color: #333;
+}
+
+/* Styl napisu menu*/
+.topnav a {
+	float: left;
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+/*Vytvořeni třech kolumn vedle sebe */
+.columnEqual {
+	float: left;
+	width: 33.33%;
+	padding: 15px;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* použiti v <div class="row">
+				<div class="column">*/
+
+.column {
+	float: left;
+	padding: 10px;
+}
+
+/*Levy a pravy sloupec*/
+
+.column.side {
+	width: 15%;
+}
+
+/*centralni sloupec*/
+
+.column.middle {
+	width: 70%;
+}
+
+/*Použíti: <div class="row">
+				<div class="column side">
+				<div class="column middle">
+				<div class="column side">*/
+.footer {
+	font-size: small;
+/*	text-align: right;*/
+	float: right;
+	display: block;
+	margin: 5px 15px;
+}

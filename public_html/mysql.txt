@@ -1,0 +1,9 @@
+1. Create database:
+   CREATE DATABASE 'databaze_pro_web' CHARACTER SET utf8 COLLATE utf8_czech_ci;
+2. Create table
+   create table uzivatele (uzivatele_id int AUTO_INCREMENT,
+				jmeno varchar(60),
+				primeni varchar(60),
+				pocet_clanku int,
+				PRIMARY KEY (uizvatele_id));
+
